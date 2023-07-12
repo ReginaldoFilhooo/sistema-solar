@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #000000
+}
+
+span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.sol {
+    width: 60px;
+    height: 60px;
+    background: #fff461;
+    box-shadow: 0 0 10px #ff8b17,
+    0 0 20px #ff8b17,
+    0 0 30px #ff8b17,
+    0 0 40px #ff8b17;
+
+    z-index: 9999;
+}
+
+.planeta {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 5);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.mercurio {
+    width: 110px;
+    height: 110px;
+
+}
+
+.venus {
+    width: 160px;
+    height: 160px;
+
+}
+
+.terra {
+    width: 220px;
+    height: 220px;
+
+}
+
+.marte {
+    width: 270px;
+    height: 270px;
+
+}
+
+.jupter {
+    width: 340px;
+    height: 340px;
+
+}
+
+.saturno {
+    width: 430px;
+    height: 430px;
+
+}
+
+.urano {
+    width: 500px;
+    height: 500px;
+
+}
+
+.netuno {
+    width: 570px;
+    height: 570px;
+
+}
+
+span::before,span::after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.mercurio::before{
+    width: 20px;
+    height: 20px;
+    bottom: 6px;
+    left: 2px;
+    background: #979797;
+}
+
+.venus::before{
+    width: 25px;
+    height: 25px;
+    top: 6px;
+    left: 10px;
+    background: #f4ff5b;
+}
+
+.terra::before{
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: -15px;
+    background: #105dcf;
+}
+
+.marte::before{
+    width: 28px;
+    height: 28px;
+    top: 22px;
+    left: 210px;
+    background: #a00101;
+}
+
+.jupter::before{
+    width: 40px;
+    height: 40px;
+    bottom: -18px;
+    left: 170px;
+    background: #ddb05e;
+}
+
+.saturno::before{
+    width: 50px;
+    height: 50px;
+    top: 100px;
+    left: -7px;
+    background: #ffe99f;
+}
+
+.saturno::after{
+    width: 80px;
+    height: 20px;
+    top: 115px;
+    left: -21px;
+    background: #ffeeb7;
+}
+
+.urano::before{
+    width: 37px;
+    height: 37px;
+    bottom: 80px;
+    right: 30px;
+    background: #76b4bd;
+}
+
+.netuno::before{
+    width: 41px;
+    height: 41px;
+    top: 5px;
+    right: 140px;
+    background: #120077;
+}
